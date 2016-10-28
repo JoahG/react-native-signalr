@@ -19,27 +19,25 @@ module.exports = {
     window.console.debug = logger;
   },
   hubConnection: (serverUrl, options) => {
-    window.document = window.document || {
-      readyState: 'complete'
-    };
+    window.document = window.document;
     if (!signalRHubConnectionFunc) {
       require('ms-signalr-client');
       signalRHubConnectionFunc = window.jQuery.hubConnection;
     }
     const protocol = serverUrl.split('//')[0];
     const host = serverUrl.split('//')[1];
-    window.location = {
-      protocol: protocol,
-      host: host
-    };
-    window.document = {
-      createElement: function() {
-        return {
-          protocol: protocol,
-          host: host
-        }
-      }
-    };
+    // window.location = {
+    //   protocol: protocol,
+    //   host: host
+    // };
+    // window.document = {
+    //   createElement: function() {
+    //     return {
+    //       protocol: protocol,
+    //       host: host
+    //     }
+    //   }
+    // };
 
     if (options && options.headers) {
       window.jQuery.defaultAjaxHeaders = options.headers;
