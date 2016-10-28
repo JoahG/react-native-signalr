@@ -1,11 +1,11 @@
 {
-  "name": "react-native-signalr",
+  "name": "react-signalr",
   "version": "0.0.9",
-  "description": "Connect to a SignalR server from react-native",
+  "description": "Connect to a SignalR server from react",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olofd/react-native-signalr.git"
+    "url": "git+https://github.com/joahg/react-signalr.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
