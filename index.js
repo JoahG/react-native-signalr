@@ -4,13 +4,13 @@ let oldLogger = window.console.debug;
 if (!window.addEventListener) {
   window.addEventListener = window.addEventListener = () => {};
 }
-window.navigator.userAgent = "react-native";
+// window.navigator.userAgent = "react-native";
 window.jQuery = require('./lib/signalr-jquery-polyfill.js');
 
 module.exports = {
   setLogger: (logger) => {
     if (window.console && window.console.debug) {
-      window.console.debug("OVERWRITING CONSOLE.DEBUG in react-native-signalr");
+      window.console.debug("OVERWRITING CONSOLE.DEBUG in react-signalr");
     } else {
       if (!window.console) {
         window.console = {};

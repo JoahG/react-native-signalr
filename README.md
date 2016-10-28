@@ -1,6 +1,6 @@
-#react-native-signalr
+#react-signalr
 
-Connect to your SignalR-server with a active websocket-connection from react-native.
+Connect to your SignalR-server with a active websocket-connection from react.
 Supports all error-handling and reconnection, including longpolling if needed.
 
 Today the module shims the jQuery-dependency that signalr has.
@@ -11,7 +11,7 @@ Tested on iOS and Android. No known issues.
 
 #Install:
 ```
-npm i react-native-signalr --save
+npm i react-signalr --save
 ```
 
 
@@ -19,12 +19,12 @@ npm i react-native-signalr --save
 
 ```
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * Sample React App
+ * https://github.com/facebook/react
  */
 'use strict';
-var React = require('react-native');
-var signalr = require('react-native-signalr');
+var React = require('react');
+var signalr = require('react-signalr');
 
 var {
   AppRegistry,
@@ -83,7 +83,7 @@ var AwesomeProject = React.createClass({
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
