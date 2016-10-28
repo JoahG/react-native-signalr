@@ -1,5 +1,5 @@
-let signalRHubConnectionFunc;
-let oldLogger = window.console.debug;
+var signalRHubConnectionFunc;
+var oldLogger = window.console.debug;
 
 if (!window.addEventListener) {
   window.addEventListener = window.addEventListener = () => {};
