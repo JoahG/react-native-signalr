@@ -2,7 +2,7 @@
 
 Connect to your SignalR server from your frontend JavaScript framework. Supports all error-handling and reconnection, including longpolling if needed.
 
-Currently shims in the necessary dependencies from jQuery. Does NOT pull in the entire jQuery-library. Only shimes the few methods SignalR needs.
+Currently shims in the necessary dependencies from jQuery. Does **not** pull in all of jQuery. Only shimes the few methods SignalR needs.
 
 ##Installation:
 
