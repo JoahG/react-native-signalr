@@ -1,16 +1,16 @@
 {
-  "name": "react-signalr",
+  "name": "signal-shimr",
   "version": "0.0.9",
-  "description": "Connect to a SignalR server from react",
+  "description": "Connect to a SignalR server from your frontend JavaScript framework",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joahg/react-signalr.git"
+    "url": "git+https://github.com/joahg/signal-shimr.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Olof Dahlbom",
+  "author": "Joah Gerstenberg",
   "license": "MIT",
   "dependencies": {
     "ms-signalr-client": "^2.2.2",
