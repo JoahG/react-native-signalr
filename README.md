@@ -14,7 +14,7 @@ $ npm i git+https://github.com/JoahG/signal-shimr.git --save
 
 ```
 'use strict';
-import 'signalr' from 'signal-shimr';
+import signalr from 'signal-shimr';
 
 // Initialize connection
 const connection = signalr.hubConnection('signalrdomain.com/signalr');
