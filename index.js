@@ -4,7 +4,7 @@ var oldLogger = window.console.debug;
 window.jQuery = require('./lib/signalr-jquery-polyfill.js');
 
 module.exports = {
-  setLogger: (logger) => {
+  setLogger: function(logger) {
     if (window.console && window.console.debug) {
       window.console.debug("OVERWRITING CONSOLE.DEBUG in signal-shimr");
     } else {
@@ -14,7 +14,7 @@ module.exports = {
     }
     window.console.debug = logger;
   },
-  hubConnection: (serverUrl, options) => {
+  hubConnection: function(serverUrl, options) {
     window.document = window.document;
     if (!signalRHubConnectionFunc) {
       require('ms-signalr-client');
