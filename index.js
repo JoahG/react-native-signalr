@@ -1,4 +1,7 @@
 var signalRHubConnectionFunc;
+
+if (!window) window = { console: {} };
+
 var oldLogger = window.console.debug;
 
 window.jQuery = require('./lib/signalr-jquery-polyfill.js');
@@ -15,7 +18,6 @@ module.exports = {
     window.console.debug = logger;
   },
   hubConnection: function(serverUrl, options) {
-    window.document = window.document;
     if (!signalRHubConnectionFunc) {
       require('ms-signalr-client');
       signalRHubConnectionFunc = window.jQuery.hubConnection;
