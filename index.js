@@ -1,6 +1,6 @@
 var signalRHubConnectionFunc;
 
-if (!window) window = { console: {} };
+if (typeof window !== 'undefined') window = { console: {} };
 
 var oldLogger = window.console.debug;
 
